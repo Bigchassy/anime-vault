@@ -64,7 +64,7 @@ $("search").addEventListener("input", render);
 $("reader").querySelector(".close").addEventListener("click", () => $("reader").close());
 $("reader").addEventListener("close", () => {
   if (location.hash.startsWith("#post=")) history.replaceState(null, "", location.pathname + location.search + "#journal");
-  document.title = "Anime Vault | Anime Journal";
+  document.title = "Anime Vault | Anime Blog";
 });
 window.addEventListener("hashchange", openArticle);
 $("year").textContent = new Date().getFullYear();
